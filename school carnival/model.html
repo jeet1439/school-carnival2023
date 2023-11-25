@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+       body{
+     background: url(/images/drone2.jpg) no-repeat center fixed;
+     background-size: cover;
+     background-position: 100%;
+    /* overflow: hidden;*/
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Carnival-HETC</div>
+        <div class="toggle" onclick="toggleActive()"><div>
+    </header>
+        <section class="section active">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="cricket.html">Cricket</a></li>
+                <li><a href="chess.html">Chess</a></li>
+                <li><a href="draw.html">Sit & Draw</a></li>
+                <li><a href="model.html">Model display</a></li>
+                <li><a href="carrom.html">Carrom</a></li>
+                <li><a href="extempore.html">Extempore</a></li
+            </ul>
+        </section>
+        <body>
+            <div class="container">
+                <h1>Model Display</h1>
+                <h2>Eligibility Criteria for Event: Model Display</h2>    
+                         <p>  Junior - Class 6 to 8 <br>
+                           Senior - Class 9 to 12</p><br>
+                <h3>Rules:</h3>
+               <p> 1. All participants should have a valid ID proof (School ID Card). <br>
+2. Maximum number of 4 participants are allowed per team. <br>
+3. Each team should display their model throughout the event schedule. Failing this, a team may be
+liable for disqualification. <br>
+4. Participants should bring their requirements (Extension cord etc.) with them on the day of the event. <br>
+5. The decision of the judges will be final and no dispute will be entertained. <br>
+6. Rules may be changed without prior notice to the participants.</p> <br>
+            </h2>Co-ordinators:</h2>
+           <p> For further inquiry, please contact: <br>
+            <p> ● Dr. Tanumoy Ghosh (8961115386) <br>
+                ● Mr. Anikendu Maitra (8240139436)</p><br>
+            </div>
+        <div class="button">
+            <a href="https://docs.google.com/forms/d/1lDNXzcDKyziaMYoSj7LfD7IBlvPpuzB2gEG3J1vXy2c/edit?ts=6544952b">Registration</a>
+        </div>    
+        </body>
+        <script>
+            function toggleActive() {
+                const toggle = document.querySelector('.toggle');
+                const section = document.querySelector('section'); 
+                toggle.classList.toggle('active');
+                section.classList.toggle('active');
+            }
+
+
+
+            document.addEventListener('DOMContentLoaded', function() {
+         
+            var content = document.querySelector('.container');
+            content.style.opacity = 1;
+}); 
+        </script>   
+</body>
+</html>

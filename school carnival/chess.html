@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+       body{
+     background: url(/images/chess.jpg) no-repeat center fixed;
+     background-size: cover;
+     background-position: 100%;
+    /* overflow: hidden;*/
+} 
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Carnival-HETC</div>
+        <div class="toggle" onclick="toggleActive()"><div>
+    </header>
+        <section class="section active">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="cricket.html">Cricket</a></li>
+                <li><a href="chess.html">Chess</a></li>
+                <li><a href="draw.html">Sit & Draw</a></li>
+                <li><a href="model.html">Model display</a></li>
+                <li><a href="carrom.html">Carrom</a></li>
+                <li><a href="extempore.html">Extempore</a></li
+            </ul>
+        </section>
+        <body>
+            <div class="container">
+                <h1>Event-State Level Chess Tournament</h1>
+                <h2>Eligibility Criteria for Event: State Level Chess Tournament</h2>    
+                    <p>[Separate events for Boys & Girls] <br>
+                     Junior - Class 6 to 8 <br>
+                     Senior - Class 9 to 12</p><br>
+                <h3>Rules:</h3>
+<p>1. All participants should have a valid ID proof (School ID Card).<br>
+2. Registration will be done on a first come first serve basis and Maximum 150 - 200 players are
+allowed to participate the event.<br>
+3. System: The tournament will be conducted as per FIDE Laws of Chess and FIDE Swiss System
+with 5 or 6 rounds.<br>
+4. Time Control: Session 40 Min. (Each 20 Min.)<br>
+5. Electronic Devices: All electronic items including all types of wrist-watches are not allowed in the
+tournament hall.<br>
+6. The Chief Arbiter's decision is final and binding on all.<br>
+7. Withdrawal: A player may withdraw at any stage of the event, after informing the Chief Arbiter in
+writing.<br>
+8. The decision of the organizing committee shall be final and binding on all parties in all matters
+pertaining to the tournament.<br>
+9. Students should maintain discipline.</p><br>
+            </h2>Co-ordinators:</h2>
+           <p> For further inquiry, please contact: <br>
+            ● Mrs. Dipanwita Biswas (9830657450) <br>
+            ● Mr. Rajib Kumar Mondal (7044325585) </p><br>
+            </div>
+        <div class="button">
+            <a href="https://docs.google.com/forms/d/1lDNXzcDKyziaMYoSj7LfD7IBlvPpuzB2gEG3J1vXy2c/edit?ts=6544952b">Registration</a>
+        </div>    
+        </body>
+        <script>
+            function toggleActive() {
+                const toggle = document.querySelector('.toggle');
+                const section = document.querySelector('section'); 
+                toggle.classList.toggle('active');
+                section.classList.toggle('active');
+            }
+
+
+
+            document.addEventListener('DOMContentLoaded', function() {
+         
+            var content = document.querySelector('.container');
+            content.style.opacity = 1;
+}); 
+        </script>   
+</body>
+</html>

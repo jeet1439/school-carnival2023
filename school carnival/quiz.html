@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        body {
+	background: linear-gradient(-45deg, #050a30, #071d49, #0e3a65, #0d4d7c);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Carnival-HETC</div>
+        <div class="toggle" onclick="toggleActive()"><div>
+    </header>
+        <section class="section active">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="cricket.html">Cricket</a></li>
+                <li><a href="chess.html">Chess</a></li>
+                <li><a href="draw.html">Sit & Draw</a></li>
+                <li><a href="model.html">Model display</a></li>
+                <li><a href="carrom.html">Carrom</a></li>
+                <li><a href="extempore.html">Extempore</a></li
+            </ul>
+        </section>
+        <body>
+            <div class="container">
+                <h1>Event-Quiz</h1>
+                <h2>Eligibility Criteria for Participating the Quiz Event - Class 8 to 12</h2>
+                <h3>Rules:</h3>
+                <p>1. All participants should have a valid ID proof (School ID Card).</p><br>
+                </p>2. Each team should contain a maximum of two participants.</p><br>
+                </p>3. An initial screening round on general knowledge will be conducted to select six teams for final
+                rounds of quiz competition.</p><br>
+                </p>4. A total of four rounds will be conducted out of which two teams will be eliminated after the first
+                two rounds.</p><br>
+                </p>5. Questions for the different rounds will be based on current affairs, audio visual clips, sports,mythology, culture, movies and music.</p><br>
+                </p>6. Winner, first runner up and second runner up prizes will be given to the participants along with participation certificates to all.</p><br>
+            </h2>Co-ordinators:</h2>
+                For further inquiry, please contact:<br>
+                ● Mr. Manab Kumar Saha (9433565643)<br>
+                ● Dr. Subham Ganguly (8981108944)<br>
+            </div>
+        <div class="button">
+            <a href="https://docs.google.com/forms/d/1lDNXzcDKyziaMYoSj7LfD7IBlvPpuzB2gEG3J1vXy2c/edit?ts=6544952b">Registration</a>
+        </div>    
+        </body>
+        <script>
+            function toggleActive() {
+                const toggle = document.querySelector('.toggle');
+                const section = document.querySelector('section'); 
+                toggle.classList.toggle('active');
+                section.classList.toggle('active');
+            }
+
+
+
+            document.addEventListener('DOMContentLoaded', function() {
+         
+            var content = document.querySelector('.container');
+            content.style.opacity = 1;
+}); 
+        </script>   
+</body>
+</html>

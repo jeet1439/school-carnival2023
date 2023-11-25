@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.main-width{
+    width: 1400px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(#f9d349,20%,#d57e12);
+}
+.hero header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 0px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: .4s;
+}
+
+nav ul li:not(:last-child) a:hover,
+nav ul li:not(:last-child) a:focus{
+    border-bottom: 2px solid white;
+}
+.content{
+    padding-top: 140px;
+}
+.content .main-text{
+    position: relative;
+    z-index: 2;
+    margin-bottom: 50px;
+}
+.content .main-text h6{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 16px;
+}
+.content .main-text h1{
+    font-size: 60px;
+    line-height: 1;
+    color: #fff;
+    margin: 0 0 15px;
+    font-family: 'Permanent Marker', cursive;
+}
+.content .main-text h2{
+    font-size: 50px;
+    font-weight: bold;
+    
+    color: #fff;
+}
+/*.content .main-text h3{
+    font-size: 22px;
+    color: #fff;
+    margin-top: 25px;
+    margin-bottom: 32px;
+}*/
+
+.content .main-text a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background: white;
+    border: 1px solid white;
+    padding: 9px 25px;
+    line-height: 1.4;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.content .main-text a:hover{
+    transform:  scale(1.2);
+    border: 1px solid #f5dca8;
+    background: transparent;
+    color: #fff;
+    transition: .4;
+}
+.social{
+    position: relative;
+    z-index: 2;
+    padding-bottom: 40px;
+}
+.content .social a{
+    display: inline-block;
+    color: #f5dcac;
+    margin-right: 25px;
+    font-size: 24px;
+}
+.content .social a:hover{
+    transform: scale(1.2);
+    transition: .4s;
+    color: #fff;
+}
+.image{
+    position: absolute;
+    width: 100%;
+    height:85%;
+    bottom: 0;
+    right: -50;
+    text-align: right;
+}
+.image img{
+    height: 100%;
+}
+.content .main-text h3 {
+    overflow: hidden; 
+    border-right: .15em solid rgba(0, 0, 0, 0); 
+    white-space: nowrap; 
+    /*margin: 0 auto; */
+    font-size: 22px;
+    color: #fff;
+    margin-top: 25px;
+    margin-bottom: 32px;
+    letter-spacing: .10em; 
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgba(0, 0, 0, 0); }
+  }
+
+
+   .toggle_btn {
+    content: "\f0c9";
+    cursor: pointer;
+    color: #fff;
+
+    position: absolute;
+    top: 6%;
+    right: 10%;
+    font-size: 1.5rem;
+    display: none;
+  }  
+
+/*dropdown*/
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top:80px;
+    height: 0;
+    width:300px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+ height: 290px;
+}
+.dropdown_menu li{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown_menu li a{
+    color: #fff;
+    text-decoration: none;
+}
+.hero header .logo h2 a{
+        display: block;
+        font-size: 30px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #fff;
+        
+            
+}
+
+@media(max-width:1075px){
+    ul.links{
+        display: none;
+    }
+    .toggle_btn{
+        display: block;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+    .image{
+        display: none;
+    }
+    .content .main-text {
+        z-index: 0;
+    }
+    .dropdown_menu {
+        z-index: 2;
+    }
+}
+
+
+@media(max-width:500px){
+    .content .main-text h1{
+        font-size: 30px;
+    }
+    .content .main-text h2 {
+        font-size: 38px;   
+    }
+    .content {
+        padding-top: 65px;
+    }
+    .content .main-text h3{
+        font-size: 14px;
+    }
+    .hero header .logo h2 a{
+        font-size: 27px;
+        position: absolute;
+        top: 6%;
+    }
+}
+
+@media(max-width:576px){
+    .dropdown_menu{
+        left: 2rem;
+        left: 2rem;
+        width: unset;
+    }
+    
+
+}
+
+
+
+

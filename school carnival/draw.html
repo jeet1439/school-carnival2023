@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        body {
+	background: linear-gradient(-45deg, #942e23, #a47e1a, #1f8e4b, #2874a4);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Carnival-HETC</div>
+        <div class="toggle" onclick="toggleActive()"><div>
+    </header>
+        <section class="section active">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cricket.html">Cricket</a></li>
+                <li><a href="chess.html">Chess</a></li>
+                <li><a href="draw.html">Sit & Draw</a></li>
+                <li><a href="model.html">Model display</a></li>
+                <li><a href="carrom.html">Carrom</a></li>
+                <li><a href="extempore.html">Extempore</a></li
+            </ul>
+        </section>
+        <body>
+            <div class="container">
+                <h1>Sit & Draw</h1>
+                <h2>Eligibility Criteria for Event: Sit & Draw</h2>    
+                          <p>Class 6 to 8</p><br>
+                <h3>Rules:</h3>
+                <p>1. All participants should have a valid ID proof (School ID Card). <br>
+2. Only drawing paper will be supplied to each participant. <br>
+3. Other necessary materials like pencil, rubber, colour etc. are to be brought by individual
+participants. Any medium of colouring is welcome viz. watercolour/pastel/coloured pencil, pencil
+shading etc. <br>
+4. Use of any kind of pen (sketch/fountain/gel/highlighter etc.) is strictly not allowed to draw/colour.
+However, it can be used only for writing captions/messages/comments etc. in the drawing sheet. <br>
+5. All participants will be awarded a certificate of participation along with a small refreshment packet. <br>
+6. There will be three winners (1st, 2nd & 3rd place) and they will be awarded with Memento and
+Winners Certificate. <br>
+7. Decisions of the Jury Panel will be final and binding.<p> <br>
+</h3>Topic (any one):</h3>
+</p>1. Save earth, stop pollution <br>
+2. Character from your favourite book <br>
+3. Say NO to plastic <br>
+4. A mythological figure <br>
+5. Some place you've dreamt about <br>
+6. Social justice for all, end child labour <br>
+7. Pencil-shaded portrait <br></p>
+            </h2>Co-ordinators:</h2>
+           <p> For further inquiry, please contact: <br>
+            <p>● Ms. Sreyasi Rupa De (9836782239) <br>
+                ● Mr. Saikat Banerjee (6294386293) <br>
+                ● Ms. Mousumi Roy (7044324745) </p><br>
+            </div>
+        <div class="button">
+            <a href="https://docs.google.com/forms/d/1lDNXzcDKyziaMYoSj7LfD7IBlvPpuzB2gEG3J1vXy2c/edit?ts=6544952b">Registration</a>
+        </div>    
+        </body>
+        <script>
+            function toggleActive() {
+                const toggle = document.querySelector('.toggle');
+                const section = document.querySelector('section'); 
+                toggle.classList.toggle('active');
+                section.classList.toggle('active');
+            }
+
+
+
+            document.addEventListener('DOMContentLoaded', function() {
+         
+            var content = document.querySelector('.container');
+            content.style.opacity = 1;
+}); 
+        </script>   
+</body>
+</html>

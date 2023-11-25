@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+       body{
+     background: url(/images/about-min.jpg) no-repeat center fixed;
+     background-size: cover;
+     background-position: 100%;
+    /* overflow: hidden;*/
+    p a{
+        background-color: azure;
+        color: black;
+    }
+    
+} 
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Carnival-HETC-2023</div>
+        <div class="toggle" onclick="toggleActive()"><div>
+    </header>
+        <section class="section active">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="cricket.html">Cricket</a></li>
+                <li><a href="chess.html">Chess</a></li>
+                <li><a href="draw.html">Sit & Draw</a></li>
+                <li><a href="model.html">Model display</a></li>
+                <li><a href="carrom.html">Carrom</a></li>
+                <li><a href="extempore.html">Extempore</a></li
+            </ul>
+        </section>
+        <body>
+            <div class="container">
+                <h1>Organized by : Hooghly Engineering & Technology College</h1>
+                <h2>Date : 25 November 2023</h2>    
+                <h3>Venue : HETC Campus</h3>
+                <h4>1. Quiz</h4></h4>
+                <p></p>● Class 8 to 12</p>
+                </h4>2. Extempore</h4>
+                </p>● Junior - Class 6 to 8</p>
+                </p>● Senior - Class 9 to 12</p>
+                </h4>3. State Level Chess Tournament [ Separate events for Boys & Girls ]</h4>
+                </p>● Junior - Class 6 to 8</p>
+                </p>● Senior - Class 9 to 12</p>
+                </h4>4. Inter School Cricket Tournament [ 9 Players per Team ]</h4>
+                </p> ●Class 6 to 12</p>
+                </h4>5. Sit & Draw</h4>
+                </p>● Class 6 to 8</p>
+                </h4>6. Model Display</h4>
+                </p>● Junior - Class 6 to 8</p>
+                </p>● Senior - Class 9 to 12</p>
+               </h4>7. Carrom</h4>
+                </p>● Junior - Class 6 to 8</p>
+                </p>● Senior - Class 9 to 12</p>
+           <p > For further inquiry, please visit the Event page<br></div>
+            </div>
+        
+        </div>    
+        </body>
+        <script>
+            function toggleActive() {
+                const toggle = document.querySelector('.toggle');
+                const section = document.querySelector('section'); 
+                toggle.classList.toggle('active');
+                section.classList.toggle('active');
+            }
+
+
+
+            document.addEventListener('DOMContentLoaded', function() {
+         
+            var content = document.querySelector('.container');
+            content.style.opacity = 1;
+}); 
+        </script>   
+</body>
+</html>
